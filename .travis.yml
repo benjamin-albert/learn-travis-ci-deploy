@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - "5.10.1"
+- 5.10.1
+deploy:
+  provider: releases
+  api_key:
+    secure: KoqdQOCo65hXOdXiNSdbUgzpX/3F81QL2kHJNsOKcQJ+jzpsZ3NJqJ8jDCDYpKcpNl54XMgr8TGjpyzVrcjKw8wGZxbLTsDxLxmF9FLq1QUK2dIhteft3vTlwFTuzpAfoO04mhNUvARLumVwW/Q1/coWA47dvCwPCYdPkVw1vWSGe2MCzLQ1SgZZ2INq0X/XJpuEcrfZS4PnGlmUhx66hVS8o7FaLNZLLDOx4PRsGSUwrMfDxdq0llODglXdec1J4p4fkDvuPNXUu5OdFsLTMi8/tVpTZVgZ+WbUBumSj+B8La0q61TIsobL09cjsALCdX3kZ8yOXX8ozZbtBDu9tnSbHO+aOTQKdgeOYFvrkmEkSSTIgvmgTTh9owU3MfDAW1YwjOjcPY89ElMVRqaKjVXBLmTpKBIsPDGfRHpkr3VmEzFYvoGc5KAdZHiDaMiOi6uzKxYCmqIBvZdm28km0ZVlmnlyzrlXOV44Qgwm6y3ADff/luvj6RR0gBdYmxi9fYTjzyv/pnEjlwb3lkBeUDr1Dnlde+Y5ngqSLtK3CBIptACtA/cq0Y8egrM3XUTXHwDOATel/vXZqGCL+OfvyUgagIL76Q1q+gVD53cnN/Ec8qw1SZvXK3dd3r+mdIdDXKg2nvIurrKCoToR47v0ESnrJdDMJDs6rO9yDAr40M8=
+  file: build.zip
+  on:
+    repo: benjamin-albert/learn-travis-ci-deploy
